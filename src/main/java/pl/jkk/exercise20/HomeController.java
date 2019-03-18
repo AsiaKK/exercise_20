@@ -60,8 +60,9 @@ public class HomeController {
 
         double sum = 0;
 
-        for (Product product : products)
+        for (Product product : products) {
             sum += product.getPrice();
+        }
 
         String sumString = String.format("%.2f", sum);
         return sumString;
